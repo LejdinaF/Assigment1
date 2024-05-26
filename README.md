@@ -1,60 +1,30 @@
-Canvas Project
-Description
-Canvas is a web project that implements a modern design and color palette throughout its various sections. It includes a navbar, footer, and several pages such as homepage, about us, contact, products listing, team/services, and individual product or team member/service pages. The project adheres to the design and palette usage specified for each section.
+# Canvas Project README
 
-Installation
-To run this project locally, follow these steps:
+## Overview
 
-Clone this repository to your local machine.
-Open the project directory in your preferred code editor.
-Open the index.html file in a web browser.
-Project Requirements
-Homepage Sections:
+## Description
+- Canvas is a web project that implements a modern design and color palette throughout its various sections. It includes a navbar, footer, and several pages such as homepage, about us, contact, products listing, team/services, and individual product or team member/service pages. The project adheres to the design and palette usage specified for each section.
 
-Navbar
-Header
-About us/For us/About product/Pricing Cards/Details
-Products Listing (Single row; 3-4 cards)
-Team/Services Listing (Single row 3-4 cards)
-Contact/Subscribe/Newsletter
-Footer
-About Us Sections:
+## Project Requirements
 
-Header
-About us/For us/About product
-Team/Services Listing
-Contact/Subscribe/Newsletter
-Contact Page:
+- Most of the project requirements are implemented
 
-Contact form (at least 5 inputs as text, number, telephone, email, textarea)
-Company
-details/Address/Email/Phone etc.
+**Note**: Please be aware that this project does not include responsive design due to  my busy schedule.
 
-Team/Services Listing
+## Usage
 
-Contact/Subscribe/Newsletter
+To use this project, follow these steps:
 
-Products Listing Page:
+1. Clone the repository: `git clone https://github.com/LejdinaF/Assigment1.git`
+2. Navigate to the project directory: cd Assignment1
+3. Customize the project files according to your requirements.
+4. Test the project locally to ensure it meets your expectations.
+5. Deploy the project to your web server or hosting platform.
 
-Products Listing
-Search bar (optional; design only)
-Pagination (optional; design only)
-Contact/Subscribe/Newsletter (and/or) Footer
-Product Page:
 
-Product Image
-Product Details
-Products Listing (Single row; 3-4 cards)
-Contact/Subscribe/Newsletter
-Teams/Services Page:
+## Credits
 
-Team/Services Listing
-Contact/Subscribe/Newsletter
-Team Member/Service Page:
+- Design and theme: [Canvas Template](https://canvastemplate.com/demo-furniture.html)
+- Icons: [Font Awesome](https://fontawesome.com/)
+- Illustrations: [Unsplash](https://unsplash.com/)
 
-Team Member/Service Image
-Team Member/Service Details
-Team/Services Listing (Single row 3-4 cards)
-Contact/Subscribe/Newsletter
-Note
-This project has been implemented according to the specified design and palette usage. However, it has not been optimized for responsiveness and may not display correctly on all devices. Future updates may address this issue.
