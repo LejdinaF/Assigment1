@@ -23,7 +23,10 @@
     <header>
       <nav class="header-row justify-content-lg-between top-search-parent">
         <div class="container">
-          <ul class="nav-links left-nav">
+          <button id="menu-toggle" class="menu-toggle">
+            ☰
+          </button>
+          <ul class="nav-links left-nav" id="nav-menu">
             <li><a href="index.html" class="oswald-font">Home</a></li>
             <li><a href="products.html" class="oswald-font">Products</a></li>
             <li><a href="about.html" class="oswald-font">About Us</a></li>
@@ -32,25 +35,29 @@
           </ul>
           <a href="index.html" class="logo">canvas</a>
           <div class="right-icons">
-            <a href="#" class="search-icon"
-              ><i
-                class="fa-solid fa-magnifying-glass"
-                style="color: #193532"
-              ></i
-            ></a>
-            <a href="#" class="cart-icon"
-              ><i class="fa-solid fa-cart-plus" style="color: #193532"></i
-            ></a>
+            <a href="#" class="search-icon">
+              <i class="fa-solid fa-magnifying-glass" style="color: #193532"></i>
+            </a>
+            <a href="#" class="cart-icon">
+              <i class="fa-solid fa-cart-plus" style="color: #193532"></i>
+            </a>
           </div>
         </div>
       </nav>
     </header>
-
+    
     <main>
       <section id="header" style="position: relative">
+        <div class="custom-shape-divider-top-1717022851">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+              <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+              <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+          </svg>
+      </div>
         <div class="header-content">
           <h3 style="font-weight:500">QUALITY IS EVERYONE'S RESPONSIBILITY</3>
-          <h1 class="lusitana-regular">
+          <h1 class="lusitana-regular animated-header">
             A Home Is Not A Home Without Furniture
           </h1>
           <a href="products.html" class="custom-button">
@@ -145,7 +152,7 @@
             </div>
           </div>
 
-          <div class="top-cart-item-desc">
+          <!-- <div class="top-cart-item-desc">
             <img
               src="pics/desk.jpg"
               alt="Minimalist Desk"
@@ -155,7 +162,7 @@
               <p>Minimalist Desk</p>
               <span class="top-cart-item-price d-block">$79.99</span>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="button-container">
           <a href="products.html" class="centered-button">
@@ -206,7 +213,7 @@
             </div>
           </div>
 
-          <div class="top-cart-item-desc">
+          <!-- <div class="top-cart-item-desc">
             <img
               src="pics/team4.jpg"
               alt="Minimalist Desk"
@@ -216,7 +223,7 @@
               <p>Emmy Roman</p>
               <span class="top-cart-item-price d-block">Customer Service Manager</span>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="button-container">
           <a href="team.html" class="centered-button">
@@ -229,35 +236,35 @@
 
       <section id="contact-subscribe">
         <div class="container">
-          <div class="form-container">
-            <div class="left-container">
-              <div class="left-inner-container">
-                <h2 class="title">Get In Touch</h2>
-                <h3 style="font-weight: lighter;">Feel free to send me a message in the contact form</h3>
-                <h4 style="font-weight: lighter;">Email: noreply@canvas.com</h4>
-                <h4 style="font-weight: lighter;">Press: noreply@canvas.com</h4>
-                <h4 style="font-weight: lighter;">Call: +00(111)-223344</h4>
-                <h4 style="font-weight: lighter;">WhatsApp: 00 111 223344</h4>
-              </div>
-            </div>
-            <div class="right-container">
-              <div class="right-inner-container">
-                <form action="#">
-                  <h2 class="title">Contact us</h2>
-                  <h2 class="sm-view">Let's Chat</h2>
+            <div class="form-container">
+                <div class="left-container">
+                    <div class="left-inner-container">
+                        <h2 class="title">Get In Touch</h2>
+                        <h3 style="font-weight: lighter;">Feel free to send me a message in the contact form</h3>
+                        <h4 style="font-weight: lighter;">Email: noreply@canvas.com</h4>
+                        <h4 style="font-weight: lighter;">Press: noreply@canvas.com</h4>
+                        <h4 style="font-weight: lighter;">Call: +00(111)-223344</h4>
+                        <h4 style="font-weight: lighter;">WhatsApp: 00 111 223344</h4>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="right-inner-container">
+                        <form id="contactForm">
+                            <h2 class="title">Contact us</h2>
+                            <h2 class="sm-view">Let's Chat</h2>
 
-                  <input type="text" placeholder="Name *" />
-                  <input type="email" placeholder="Email *" />
-                  <input type="text" placeholder="Company" />
-                  <input type="phone" placeholder="Phone" />
-                  <textarea rows="4" placeholder="Message"></textarea>
-                  <button>Submit</button>
-                </form>
-              </div>
+                            <input type="text" id="name" name="name" placeholder="Name *" required />
+                            <input type="email" id="email" name="email" placeholder="Email *" required />
+                            <input type="text" id="company" name="company" placeholder="Company" />
+                            <input type="tel" id="phone" name="phone" placeholder="Phone" />
+                            <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+                            <button type="submit" class = "sendBtn">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
     </main>
     <footer
       id="footer"
@@ -383,48 +390,13 @@
               </li>
             </ul>
           </div>
-
-          <div class="item" style="flex: 2; margin-bottom: 20px">
-            <h4 style="font-weight: bold">Subscribe Us</h4>
-            <p>
-              Subscribe to Our Newsletter to get Important News, Amazing Offers
-              & Inside Scoops:
-            </p>
-            <form
-              action="#"
-              method="post"
-              class="mb-0"
-              novalidate="novalidate"
-              style="margin-top: 20px"
-            >
+          <div class="item" style="flex: 2; margin-bottom: 20px;">
+            <h4 style="font-weight: bold;">Subscribe Us</h4>
+            <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
+            <form id="subscribeForm" class="mb-0" novalidate="novalidate" style="margin-top: 20px;">
               <div class="input-group">
-                <input
-                  type="email"
-                  name="widget-subscribe-form-email"
-                  class="form-control required email"
-                  placeholder="Enter your Email Address"
-                  style="
-                    border: solid #cccccc;
-                    border-radius: 5px 0 0 5px;
-                    color: #193532;
-                    padding: 10px;
-                    width: 50%;
-                  "
-                />
-                <button
-                  class="btn bg-color px-3"
-                  type="submit"
-                  style="
-                    background-color: #193532;
-                    border-color: #193532;
-                    color: #ffffff;
-                    border-radius: 0 5px 5px 0;
-                    padding: 10px;
-                    margin-left: -4px;
-                  "
-                >
-                  Subscribe
-                </button>
+                  <input type="email" id="emailS" name="emailS" class="form-control required email" placeholder="Enter your Email Address" style="border: solid #cccccc; border-radius: 5px 0 0 5px; color: #193532; padding: 10px; width: 50%;" required>
+                  <button type="submit" class="sendBtn">Subscribe</button>
               </div>
             </form>
           </div>
@@ -432,4 +404,6 @@
       </div>
     </footer>
   </body>
+  <script src="./script.js"></script>
+  
 </html>

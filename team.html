@@ -8,24 +8,32 @@
   <title>Our Team</title>
 </head>
 <body>
-    <header>
-        <nav class="header-row justify-content-lg-between top-search-parent">
-          <div class="container">
-            <ul class="nav-links left-nav">
-              <li><a href="index.html" class="oswald-font">Home</a></li>
-              <li><a href="products.html" class="oswald-font">Products</a></li>
-              <li><a href="about.html" class="oswald-font">About Us</a></li>
-              <li><a href="contact.html" class="oswald-font">Contact</a></li>
-              <li><a href="team.html" class="oswald-font">Team</a></li>
-            </ul>
-            <a href="index.html" class="logo">canvas</a>
-            <div class="right-icons">
-                <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass" style="color: #193532;"></i></a>
-                <a href="#" class="cart-icon"><i class="fa-solid fa-cart-plus" style="color: #193532;"></i></a>
-            </div>
-          </div>
-        </nav>
-      </header>
+  <header>
+    <nav class="header-row justify-content-lg-between top-search-parent">
+      <div class="container">
+        <button id="menu-toggle" class="menu-toggle">
+          ☰
+        </button>
+        <ul class="nav-links left-nav" id="nav-menu">
+          <li><a href="index.html" class="oswald-font">Home</a></li>
+          <li><a href="products.html" class="oswald-font">Products</a></li>
+          <li><a href="about.html" class="oswald-font">About Us</a></li>
+          <li><a href="contact.html" class="oswald-font">Contact</a></li>
+          <li><a href="team.html" class="oswald-font">Team</a></li>
+        </ul>
+        <a href="index.html" class="logo">canvas</a>
+        <div class="right-icons">
+          <a href="#" class="search-icon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #193532"></i>
+          </a>
+          <a href="#" class="cart-icon">
+            <i class="fa-solid fa-cart-plus" style="color: #193532"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
   <main>
     <section id="products-listing">
       <h2 class="title">Our Team</h2>
@@ -150,35 +158,35 @@
     </section>
     <section id="contact-subscribe">
       <div class="container">
-        <div class="form-container">
-          <div class="left-container">
-            <div class="left-inner-container">
-              <h2 class="title">Get In Touch</h2>
-              <h3 style="font-weight: lighter;">Feel free to send me a message in the contact form</h3>
-              <h4 style="font-weight: lighter;">Email: noreply@canvas.com</h4>
-              <h4 style="font-weight: lighter;">Press: noreply@canvas.com</h4>
-              <h4 style="font-weight: lighter;">Call: +00(111)-223344</h4>
-              <h4 style="font-weight: lighter;">WhatsApp: 00 111 223344</h4>
-            </div>
-          </div>
-          <div class="right-container">
-            <div class="right-inner-container">
-              <form action="#">
-                <h2 class="title">Contact us</h2>
-                <h2 class="sm-view">Let's Chat</h2>
+          <div class="form-container">
+              <div class="left-container">
+                  <div class="left-inner-container">
+                      <h2 class="title">Get In Touch</h2>
+                      <h3 style="font-weight: lighter;">Feel free to send me a message in the contact form</h3>
+                      <h4 style="font-weight: lighter;">Email: noreply@canvas.com</h4>
+                      <h4 style="font-weight: lighter;">Press: noreply@canvas.com</h4>
+                      <h4 style="font-weight: lighter;">Call: +00(111)-223344</h4>
+                      <h4 style="font-weight: lighter;">WhatsApp: 00 111 223344</h4>
+                  </div>
+              </div>
+              <div class="right-container">
+                  <div class="right-inner-container">
+                      <form id="contactForm">
+                          <h2 class="title">Contact us</h2>
+                          <h2 class="sm-view">Let's Chat</h2>
 
-                <input type="text" placeholder="Name *" />
-                <input type="email" placeholder="Email *" />
-                <input type="text" placeholder="Company" />
-                <input type="phone" placeholder="Phone" />
-                <textarea rows="4" placeholder="Message"></textarea>
-                <button>Submit</button>
-              </form>
-            </div>
+                          <input type="text" id="name" name="name" placeholder="Name *" required />
+                          <input type="email" id="email" name="email" placeholder="Email *" required />
+                          <input type="text" id="company" name="company" placeholder="Company" />
+                          <input type="tel" id="phone" name="phone" placeholder="Phone" />
+                          <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+                          <button type="submit" class="sendBtn">Submit</button>
+                      </form>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </section>
+  </section>
   </main>
   <footer id="footer" style="background-color: #ffffff; color: #193532; margin-left: 0; text-align: left;">
     <div class="container py-5" style="width: 80%;">
@@ -224,15 +232,16 @@
         <div class="item" style="flex: 2; margin-bottom: 20px;">
           <h4 style="font-weight: bold;">Subscribe Us</h4>
           <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
-          <form action="#" method="post" class="mb-0" novalidate="novalidate" style="margin-top: 20px;">
+          <form id="subscribeForm" class="mb-0" novalidate="novalidate" style="margin-top: 20px;">
             <div class="input-group">
-                <input type="email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email Address" style="border: solid #cccccc; border-radius: 5px 0 0 5px; color: #193532; padding: 10px; width: 50%;">
-                <button class="btn bg-color px-3" type="submit" style="background-color: #193532; border-color: #193532; color: #ffffff; border-radius: 0 5px 5px 0; padding: 10px; margin-left: -4px;">Subscribe</button>
+                <input type="email" id="emailS" name="emailS" class="form-control required email" placeholder="Enter your Email Address" style="border: solid #cccccc; border-radius: 5px 0 0 5px; color: #193532; padding: 10px; width: 50%;" required>
+                <button type="submit" class="sendBtn">Subscribe</button>
             </div>
-        </form>
+          </form>
         </div>
       </div>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>

@@ -31,6 +31,7 @@ a {
 }
 .header-content {
   text-align: start;
+  z-index: 2;
   padding-left: 60px;
 }
 
@@ -67,10 +68,11 @@ nav.header-row {
   background-color: #ffffff;
   color: #193532;
   border: 2px solid #193532;
-  padding: 10px 20px;
+  padding: 9px 9px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  font-size: 12px;
 }
 
 .button-icon {
@@ -91,11 +93,13 @@ nav .logo {
   color: #333;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  transition: background 0.3s;
+  transition: #193532 0.3s;
+
 }
 
 .nav-links a:hover {
-  background: #f0f0f0;
+    background-color: #193532;
+    color: white;
 }
 
 .right-icons {
@@ -191,10 +195,12 @@ footer .social-media a {
 }
 
 .card-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  justify-items: center;
+  justify-items: center; */
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card {
@@ -226,6 +232,17 @@ footer .social-media a {
   justify-content: space-between;
   align-items: flex-start;
   padding-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .products {
+flex-direction: column;
+/* width:90%; */
+display: contents;
+
+  }
+  .card-container {
+    flex-direction: row-reverse;
+  }
 }
 
 .top-cart-item-desc {
@@ -312,7 +329,7 @@ object-fit: cover;
   .right-container {
     display:flex;
     flex:1;
-    height:460px;
+    /* height:460px; */
     justify-content:center;
     align-items:start;
     text-align: start;
@@ -360,17 +377,17 @@ object-fit: cover;
   }
   
   button {
-      border-radius: 20px;
-      border: 1px solid #193532;
-      background-color: #193532;
-      color: #FFFFFF;
-      font-size: 12px;
-      font-weight: bold;
-      padding: 12px 45px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      transition: transform 80ms ease-in;
-    cursor:pointer;
+    border-radius: 7px;
+    border: 1px solid #193532;
+    background-color: #193532;
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 1px 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
   }
   
   button:hover {
@@ -495,6 +512,7 @@ object-fit: cover;
     color: #193532;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 12px;
   }
   
   .line {
@@ -538,3 +556,118 @@ p{
     font-size: 20px;
   }
   
+  /* Base styles */
+/* Base styles */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.nav-links {
+  display: flex;
+  list-style-type: none;
+}
+.nav-links li {
+  margin-right: 20px;
+}
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1000;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+  }
+}
+
+
+
+.animated-header {
+  animation: fadeIn 2s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.custom-shape-divider-top-1717021778 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1717022851 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1717022851 svg {
+  position: relative;
+  display: block;
+  width: calc(293% + 1.3px);
+  height: 399px;
+}
+
+.custom-shape-divider-top-1717022851 .shape-fill {
+  fill: #415549;
+}
+
+.sendBtn{
+  border-radius: 8px;
+  border: 1px solid #193532;
+  background-color: #193532;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 10px 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
