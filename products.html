@@ -38,9 +38,9 @@
   <main>
     <section id="products-listing">
       <h2 class="title">Our Products</h2>
-      <div class="products">
+      <div id="product-container" class="products" >
         <!-- 1st row -->
-        <div class="top-cart-item-desc">
+        <!-- <div class="top-cart-item-desc">
           <a href="product.html">
             <img
               src="pics/lamp.jpg"
@@ -95,7 +95,7 @@
             <span class="top-cart-item-price d-block">$79.99</span>
           </div>
         </a>
-        </div>
+        </div> -->
       </div>
       <div class="products">
         <!-- 2nd row -->
@@ -206,7 +206,13 @@
           </a>
           </div>
           </div>
+          
         </section>
+          <div class="button-container">
+              <button id="load-more" class="custom-button">
+                LOAD MORE
+              </button>
+          </div>
 
         <div><ul class="pagination">
           <li class="liStyle"><a href="#0">&lt;</a></li>
@@ -218,36 +224,42 @@
         </ul>
       </div>
       <section id="contact-subscribe">
-        <div class="container">
-            <div class="form-container">
-                <div class="left-container">
-                    <div class="left-inner-container">
-                        <h2 class="title">Get In Touch</h2>
-                        <h3 style="font-weight: lighter;">Feel free to send me a message in the contact form</h3>
-                        <h4 style="font-weight: lighter;">Email: noreply@canvas.com</h4>
-                        <h4 style="font-weight: lighter;">Press: noreply@canvas.com</h4>
-                        <h4 style="font-weight: lighter;">Call: +00(111)-223344</h4>
-                        <h4 style="font-weight: lighter;">WhatsApp: 00 111 223344</h4>
-                    </div>
+    <div class="container">
+        <div class="form-container">
+            <div class="left-container">
+                <div class="left-inner-container">
+                    <h2 class="title">Get In Touch</h2>
+                    <h3 style="font-weight: lighter;">Feel free to send me a message in the contact form</h3>
+                    <h4 style="font-weight: lighter;">Email: noreply@canvas.com</h4>
+                    <h4 style="font-weight: lighter;">Press: noreply@canvas.com</h4>
+                    <h4 style="font-weight: lighter;">Call: +00(111)-223344</h4>
+                    <h4 style="font-weight: lighter;">WhatsApp: 00 111 223344</h4>
                 </div>
-                <div class="right-container">
-                    <div class="right-inner-container">
-                        <form id="contactForm">
-                            <h2 class="title">Contact us</h2>
-                            <h2 class="sm-view">Let's Chat</h2>
+            </div>
+            <div class="right-container">
+                <div class="right-inner-container">
+                    <form id="contactForm">
+                        <h2 class="title">Contact us</h2>
+                        <h2 class="sm-view">Let's Chat</h2>
 
-                            <input type="text" id="name" name="name" placeholder="Name *" required />
-                            <input type="email" id="email" name="email" placeholder="Email *" required />
-                            <input type="text" id="company" name="company" placeholder="Company" />
-                            <input type="tel" id="phone" name="phone" placeholder="Phone" />
-                            <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
-                            <button type="submit" class="sendBtn">Submit</button>
-                          </form>
-                    </div>
+                        <input type="text" id="name" name="name" placeholder="Name *" required />
+                        <div id="nameError" class="error-message"></div>
+
+                        <input type="email" id="email" name="email" placeholder="Email *" required />
+                        <div id="emailError" class="error-message"></div>
+
+                        <input type="text" id="company" name="company" placeholder="Company" />
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" />
+                        <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+                        
+                        <button type="submit" class="sendBtn">Submit</button>
+                        <div id="successMessage" class="success-message"></div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
   </main>
   <footer id="footer" style="background-color: #ffffff; color: #193532; margin-left: 0; text-align: left;">
     <div class="container py-5" style="width: 80%;">
@@ -301,6 +313,9 @@
           </form>
         </div>
   </footer>
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
   <script src="./script.js"></script>
 </body>
 </html>

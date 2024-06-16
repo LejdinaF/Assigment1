@@ -33,13 +33,14 @@
       </div>
     </nav>
   </header>
-  
   <main>
+
     <section id="products-listing">
       <h2 class="title">Our Team</h2>
-      <div class="products">
+      <!-- <div class="products" id="team-members-container"> -->
+        <div id="team-members-container" class="products">
 
-        <div class="top-cart-item-desc">          
+        <!-- <div class="top-cart-item-desc">          
           <a href="team-member.html">
           <img
             src="pics/team2.jpg"
@@ -52,7 +53,7 @@
           </div>
           </a>
         </div>
-
+    
         <div class="top-cart-item-desc">
           <a href="team-member.html">
           <img
@@ -66,9 +67,9 @@
           </div>
           </a>
         </div>
-
-
-
+    
+    
+    
         <div class="top-cart-item-desc">
           <a href="team-member.html">
           <img
@@ -82,7 +83,7 @@
           </div>
           </a>
         </div>
-
+    
         <div class="top-cart-item-desc">
           <a href="team-member.html">
           <img
@@ -95,12 +96,12 @@
             <span class="top-cart-item-price d-block">Customer Service Manager</span>
           </div>
           </a>
-        </div>
+        </div> -->
       </div>
-
+    
             <!-- 2nd row -->
-            <div class="products">
-              <div class="top-cart-item-desc">
+            <!-- <div class="products" id="team-members-container"> -->
+              <!-- <div class="top-cart-item-desc">
                 <a href="team-member.html">
                 <img
                   src="pics/team5.jpg"
@@ -141,7 +142,7 @@
                 </div>
                 </a>
               </div>
-
+    
               <div class="top-cart-item-desc">
                 <a href="team-member.html">
                 <img
@@ -153,7 +154,7 @@
                   <span class="top-cart-item-price d-block">Retail Manager</span>
                 </div>
                 </a>
-              </div>
+              </div> -->
             </div>
     </section>
     <section id="contact-subscribe">
@@ -174,19 +175,25 @@
                       <form id="contactForm">
                           <h2 class="title">Contact us</h2>
                           <h2 class="sm-view">Let's Chat</h2>
-
+    
                           <input type="text" id="name" name="name" placeholder="Name *" required />
+                          <div id="nameError" class="error-message"></div>
+    
                           <input type="email" id="email" name="email" placeholder="Email *" required />
+                          <div id="emailError" class="error-message"></div>
+    
                           <input type="text" id="company" name="company" placeholder="Company" />
                           <input type="tel" id="phone" name="phone" placeholder="Phone" />
                           <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+                          
                           <button type="submit" class="sendBtn">Submit</button>
+                          <div id="successMessage" class="success-message"></div>
                       </form>
                   </div>
               </div>
           </div>
       </div>
-  </section>
+    </section>
   </main>
   <footer id="footer" style="background-color: #ffffff; color: #193532; margin-left: 0; text-align: left;">
     <div class="container py-5" style="width: 80%;">
@@ -201,7 +208,6 @@
             <li style="margin-bottom: 15px; font-family: 'Oswald', sans-serif;"><i class="fab fa-whatsapp" style="color: #193532; margin-right: 5px;"></i> <a href="#" style="color: #193532;">WhatsApp</a></li>
           </ul>
         </div>
-  
         <div class="item" style="flex: 1; margin-right: 20px;">
           <h4 style="font-weight: bold;">Support</h4>
           <ul class="list-unstyled" style="margin-top: 10px;">
@@ -210,7 +216,7 @@
             <li style="margin-bottom: 15px; font-family: 'Oswald', sans-serif;"><a href="#" style="color: #193532;">Contact</a></li>
           </ul>
         </div>
-  
+    
         <div class="item" style="flex: 1; margin-right: 20px;">
           <h4 style="font-weight: bold;">Trending</h4>
           <ul class="list-unstyled" style="margin-top: 10px;">
@@ -219,7 +225,7 @@
             <li style="margin-bottom: 15px; font-family: 'Oswald', sans-serif;"><a href="#" style="color: #193532;">Who are we</a></li>
           </ul>
         </div>
-  
+    
         <div class="item" style="flex: 1; margin-right: 20px;">
           <h4 style="font-weight: bold;">Get to Know us</h4>
           <ul class="list-unstyled" style="margin-top: 10px;">
@@ -228,7 +234,7 @@
             <li style="margin-bottom: 15px; font-family: 'Oswald', sans-serif;"><a href="#" style="color: #193532;">One Pages</a></li>
           </ul>
         </div>
-  
+    
         <div class="item" style="flex: 2; margin-bottom: 20px;">
           <h4 style="font-weight: bold;">Subscribe Us</h4>
           <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
@@ -242,6 +248,9 @@
       </div>
     </div>
   </footer>
-  <script src="./script.js"></script>
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+    <script src="./script.js"></script>
 </body>
 </html>

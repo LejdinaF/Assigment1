@@ -44,6 +44,7 @@
           </div>
         </div>
       </nav>
+      <div id="welcome-message" style="text-align: center; font-size: 1.1em;"></div>
     </header>
     
     <main>
@@ -114,56 +115,44 @@
           </div>
         </div>
       </section>
-      <section id="products-listing">
+      <section id="ourProducts-listing">
         <h2 class="title">Our Products</h2>
-        <div class="products">
-          <div class="top-cart-item-desc">
-            <img
-              src="pics/lamp.jpg"
-              alt="Adjustable Desk Lamp"
-              class="product-image"
-            />
-            <div class="product-details">
-              <p>Adjustable Desk Lamp</p>
-              <span class="top-cart-item-price d-block">$39.99</span>
-            </div>
+          <div class="carousel">
+              <div class="carousel-images">
+                  <div class="carousel-item">
+                      <img src="pics/Bathroom.jpg"class="product-image">
+                      <div class="product-details">
+                          <p>Bathroom Interior</p>
+                          <span class="top-cart-item-price d-block">$999.99</span>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="pics/LivingRoom.jpg" class="product-image">
+                      <div class="product-details">
+                          <p>Comfortable Arm Chairs</p>
+                          <span class="top-cart-item-price d-block">$129.99</span>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="pics/SofaSet.png" class="product-image">
+                      <div class="product-details">
+                          <p>Pink Sofa Set</p>
+                          <span class="top-cart-item-price d-block">$379.99</span>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="pics/Bedroom.jpg" class="product-image">
+                      <div class="product-details">
+                          <p>Royalty Vibe Bedroom</p>
+                          <span class="top-cart-item-price d-block">$1599.99</span>
+                      </div>
+                  </div>
+              </div>
+              <button class="carousel-button prev">&#10094;</button>
+              <button class="carousel-button next">&#10095;</button>
           </div>
-          <div class="top-cart-item-desc">
-            <img
-              src="pics/chair.jpg"
-              alt="Comfortable Office Chair"
-              class="product-image"
-            />
-            <div class="product-details">
-              <p>Comfortable Office Chair</p>
-              <span class="top-cart-item-price d-block">$129.99</span>
-            </div>
-          </div>
-
-          <div class="top-cart-item-desc">
-            <img
-              src="pics/bookshelf.jpg"
-              alt="Wooden Bookshelf"
-              class="product-image"
-            />
-            <div class="product-details">
-              <p>Wooden Bookshelf</p>
-              <span class="top-cart-item-price d-block">$89.99</span>
-            </div>
-          </div>
-
-          <!-- <div class="top-cart-item-desc">
-            <img
-              src="pics/desk.jpg"
-              alt="Minimalist Desk"
-              class="product-image"
-            />
-            <div class="product-details">
-              <p>Minimalist Desk</p>
-              <span class="top-cart-item-price d-block">$79.99</span>
-            </div>
-          </div> -->
-        </div>
+      </section>
+      
         <div class="button-container">
           <a href="products.html" class="centered-button">
             <button class="custom-button">
@@ -252,19 +241,26 @@
                         <form id="contactForm">
                             <h2 class="title">Contact us</h2>
                             <h2 class="sm-view">Let's Chat</h2>
-
+    
                             <input type="text" id="name" name="name" placeholder="Name *" required />
+                            <div id="nameError" class="error-message"></div>
+    
                             <input type="email" id="email" name="email" placeholder="Email *" required />
+                            <div id="emailError" class="error-message"></div>
+    
                             <input type="text" id="company" name="company" placeholder="Company" />
                             <input type="tel" id="phone" name="phone" placeholder="Phone" />
                             <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
-                            <button type="submit" class = "sendBtn">Submit</button>
+                            
+                            <button type="submit" class="sendBtn">Submit</button>
+                            <div id="successMessage" class="success-message"></div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     </main>
     <footer
       id="footer"
@@ -402,8 +398,13 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> 
+    
+   
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="./script.js"></script>
   </body>
-  <script src="./script.js"></script>
-  
 </html>

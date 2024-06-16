@@ -35,21 +35,6 @@
   </header>
   
   <main>
-    <section id="contact-details" style="background-color: #193532;">
-      <div class="container-aboutUs">
-        <div class="iframe-column">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.245978463062!2d21.139574915818655!3d42.66291307916767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ef1825d20c5%3A0x5b7aeb8a1d6f4d29!2sPrishtina!5e0!3m2!1sen!2s!4v1620450916355!5m2!1sen!2s"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-        <div class="column">
-          <h2 style="color: #ffffff;">Our Location</h2>
-       </div>
-      </div>  
-      </div>
-    </section>
     <section id="contact-subscribe">
       <div class="container">
           <div class="form-container">
@@ -68,19 +53,26 @@
                       <form id="contactForm">
                           <h2 class="title">Contact us</h2>
                           <h2 class="sm-view">Let's Chat</h2>
-
+  
                           <input type="text" id="name" name="name" placeholder="Name *" required />
+                          <div id="nameError" class="error-message"></div>
+  
                           <input type="email" id="email" name="email" placeholder="Email *" required />
+                          <div id="emailError" class="error-message"></div>
+  
                           <input type="text" id="company" name="company" placeholder="Company" />
                           <input type="tel" id="phone" name="phone" placeholder="Phone" />
                           <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+                          
                           <button type="submit" class="sendBtn">Submit</button>
+                          <div id="successMessage" class="success-message"></div>
                       </form>
                   </div>
               </div>
           </div>
       </div>
   </section>
+
     <section id="products-listing" style="padding-bottom:20px ;">
       <h2 class="title">Our Team</h2>
       <div class="products">
@@ -199,6 +191,10 @@
       </div>
     </div>
   </footer>
+ 
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button> 
   <script src="./script.js"></script>
 </body>
 </html>

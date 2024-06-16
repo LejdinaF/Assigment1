@@ -115,19 +115,25 @@
                       <form id="contactForm">
                           <h2 class="title">Contact us</h2>
                           <h2 class="sm-view">Let's Chat</h2>
-
+  
                           <input type="text" id="name" name="name" placeholder="Name *" required />
+                          <div id="nameError" class="error-message"></div>
+  
                           <input type="email" id="email" name="email" placeholder="Email *" required />
+                          <div id="emailError" class="error-message"></div>
+  
                           <input type="text" id="company" name="company" placeholder="Company" />
                           <input type="tel" id="phone" name="phone" placeholder="Phone" />
                           <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+                          
                           <button type="submit" class="sendBtn">Submit</button>
+                          <div id="successMessage" class="success-message"></div>
                       </form>
                   </div>
               </div>
           </div>
       </div>
-  </section>
+  </section>  
   </main>
   <footer id="footer" style="background-color: #ffffff; color: #193532; margin-left: 0; text-align: left;">
     <div class="container py-5" style="width: 80%;">
@@ -183,6 +189,9 @@
       </div>
     </div>
   </footer>
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
   <script src="./script.js"></script>
 </body>
 </html>
